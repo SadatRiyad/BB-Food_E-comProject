@@ -1,0 +1,803 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Gabelisa.otf);
+  }
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size: 16px;
+    line-height: 1.7em;                                           
+}
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.2em;                                              
+}
+a, a:hover{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* global css start */
+.title-1{
+    width: 100%;
+    margin: 200px 0px 30px;
+    text-align: center;
+}
+.title-1 .box0{
+    width: 100%;
+    margin: 7px 0px 15px;
+}
+.title-1 h4{
+    font-family: myFirstFont !important;
+    font-size: 48px;
+    color: #3d2514;
+    margin: -30px 0px 25px 0px;
+}
+.title-1 h2{
+    font-family: 'Fredericka the Great', cursive !important;    
+    font-size: 95px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #3d2514;
+    margin: 30px 0px 20px;
+}
+.title-1 h3{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #433b00;
+    margin-bottom: 25px;
+}
+.title-1 p{
+    font-family: 'Fredericka the Great', cursive !important;    
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.7em;
+    color: #3d2514;
+    text-align: end;
+    margin: 25px 0px 0px;
+}
+.title-1 h5 span{
+    font-family: 'Fredericka the Great', cursive !important;    
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.9em;
+    color: #3d2514;
+    text-align: start !important;
+    margin: 25px 120px 0px 0px;
+}
+.title-1 .btn-primary{
+    margin: 25px 10px 25px 0px;
+    width: 149px;
+    height: 49px;
+    font-size: 16px;
+    line-height: 1.7em;
+    text-align: center;
+    padding: 10px 10px;
+    background: #008ed6;
+    color: #fff;
+    border: 1px solid #008ed6;
+    transition: .75s;
+}
+.title-1 .btn-primary:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #999;
+}
+.title-1 .btn-primary:focus{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #999;
+}
+.title-1 .btn-secondary{
+    font-family: 'Montserrat', sans-serif !important;
+    width: 180px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 1.7em;
+    text-align: center;
+    padding: 11px 10px;
+    background: transparent;
+    color: #3d2514;
+    font-weight: 800;
+    border: 1.7px solid #3d2514;
+    border-radius: 1px;
+    transition: .75s;
+}
+.title-1 .btn-secondary:hover{
+    background: #3d2514;
+    color: #fff;
+    border: 1.7px solid #3d2514;
+}
+.title-1 .btn-secondary:focus{
+    background: #3d2514;
+    color: #fff;
+    border: 1.7px solid #3d2514;
+}
+/* Global css end */
+
+/* header start */
+.header{
+    margin: 0px 0px 0px;
+    width: 100%;
+    background: url(../image/header.png) center top no-repeat;
+    background-size: cover;
+    padding: 55px 0px 130px;
+    position: relative;
+    overflow: hidden;
+}
+/* navbar start */
+.header .navbar{
+    width: 100%;
+    padding: 3px 5px 11px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: url(../image/header.png) center no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .navbar .navbar-logo img{
+    width: 100%;
+    padding: 2px;
+    opacity: .8;
+}
+.header .navbar .navbar-nav .nav-item .nav-link{
+    font-family: 'Bebas Neue', arial;
+    color: #3d2514;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 65px 0px 0px 37px;
+    transition:transform 0.3s, color 0.3s;
+}
+.header .navbar .navbar-nav .nav-item .nav-link:hover{
+    background: url(../image/Shape.png) center bottom no-repeat;
+    background-size:auto ;
+    transform: scale(1.15) translateX(5.5px) !important;
+    color: #ce0000;
+}
+.header .navbar .navbar-nav .nav-item .nav-link:focus{
+    color: #ce0000;
+    transform: scale(1.13);
+}
+
+.header .navbar .nav-right img{
+    width: 180px;
+    padding: 4px 7px 15px 0px;
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(-5px) ;
+    }
+    50%{
+        transform: translateY(0px) ;
+    }
+    100%{
+        transform: translateY(-5px) ;
+    }
+}
+.navbar-toggler{
+    margin-top: 8px;
+    border: 1.4px solid #00000064 !important;
+    transition: .5s;
+}
+.header .navbar-toggler:focus{
+    cursor: pointer;
+    box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.6);
+    transform: translateZ(1px);
+}
+.header .navbar-toggler:focus{
+    cursor: pointer;
+    box-shadow: 4px -4px 3px rgba(0, 0, 0, 0.6);
+    transform: translateZ(1px);
+}
+/* navbar end */
+.inner-header{
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+.inner-header .d-1{
+    margin: 140px 0px 0px 30px;
+    width: 107%;
+    height: auto;
+    background: center top no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -40px;
+    top: -40px;
+    animation: animate1 3.5s linear infinite forwards;
+}
+
+@keyframes animate1 {
+    0%{
+        transform: translateY(-3px) scale(1.16) ;
+    }
+    50%{
+        transform: translateY(0px) scale(1);
+    }
+    100%{
+        transform: translateY(-3px) scale(1.16);
+    }
+}
+/* header end */
+
+/* product section start */
+#product{
+    width: 100%;
+    padding: 80px 0px 70px;
+    background: url(../image/group2.png) center no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+#product .inner-products .title-1{
+    margin: 40px 0px 0px;
+}
+#product .inner-products .title-1 h3{
+    font-family: 'Fredericka the Great', cursive !important;    
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    color: #3d2514;
+    text-align: center;
+    width: 100%;
+    margin:0px 0px 25px;
+    text-transform: uppercase;
+}
+#product .inner-products .title-1 p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #3d2514;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    padding: 5px;
+    margin: 15px 10px;
+    opacity: .9;
+}
+#product .inner-product{
+    width: 100%;
+}
+#product .inner-product .inner-box{
+    width: 100%;
+    padding: 25px 3px;
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    background: transparent;
+    transition: .3s;
+}
+#product .inner-product .inner-box:hover{
+    box-shadow: 3px 13px 20px rgba(0, 0, 0, 0.2);
+}
+#product .inner-product .inner-box:focus{
+    box-shadow: 3px 9px 20px rgba(0, 0, 0, 0.2);
+}
+#product .inner-product .inner-box:hover .icon-box img{
+    transform: scale(1.05);
+}
+#product .inner-product .inner-box .icon-box img{
+    transition: .6s;
+}
+#product .inner-product .inner-box .icon-box .c1{
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: 27px 15px 0px;
+}
+#product .inner-product .inner-box .icon-box .c2{
+    width: 99%;
+    height: auto;
+    text-align: center;
+    margin: 27px 15px 6px;
+}
+#product .inner-product .inner-box .icon-box .c3{
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: 27px 15px 0px;
+}
+#product .inner-product .inner-box h5 {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 1px 10px;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: #3d2514;
+}
+#product .inner-product .inner-box p {
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+    line-height: 26px;
+    color: #3d2514;
+    margin: 5px 0px;
+}
+#product .inner-product .inner-box .btn-primary{
+    font-family: 'Montserrat', sans-serif !important;
+    margin: 25px 0px 15px;
+    width: 150px;
+    height: 50px;
+    line-height: 1.7em;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    padding: 11px;
+    background: #ffe001;
+    color: #3d2514;
+    border: 2px solid #ffe001;
+    border-radius: 1px;
+    transition: all .45s ease-out;
+}
+#product .inner-product .inner-box .btn-primary:hover{
+    border: 2px solid #3d2514f5;
+    background: linear-gradient(#f3e97a52 ,#ffe100f5,#fdf59a52);    
+    color: #3d2514;
+    box-shadow:inset 2px 2px 2px  rgba(255, 255, 255, 0.9);
+    transform: scale(1.055);
+}
+/* product section end */
+
+/* stay start */
+.stay{
+    width: 100%;
+    padding: 80px 0px;
+    background-color: #e8e6a9;
+}
+.stay .inner-stay{
+    width: 100%;
+}
+.stay .inner-stay .title-1{
+    margin: 0px;
+    text-align: left;
+}
+.stay .inner-stay .title-1 h4{
+    font-family: myFirstFont !important;
+    font-size: 100px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    color: #3d2514;
+    margin: 10px 0px 10px 0px;
+}
+.stay .inner-stay .title-1 h2{
+    font-family: 'Fredericka the Great', cursive !important;
+    font-size: 94px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    color: #3d2514;
+    margin: 40px 0px 40px;
+}
+.stay .inner-stay .stay-img{
+    width: 100%;
+}
+.stay .inner-stay img{
+    width: 100%;
+}
+.stay .title-1 .btn-secondary {
+    font-family: 'Montserrat', sans-serif !important;
+    width: 180px;
+    height: 52px;
+    font-size: 16px;
+    line-height: 1.7em;
+    text-align: center;
+    padding: 11px 10px;
+    background: #3d2514;
+    color: #fff;
+    font-weight: 800;
+    border: 1.7px solid #3d2514;
+    border-radius: 1px;
+    transition:all .75s;
+    margin: 20px 4px 0px;
+}
+.stay .title-1 .btn-secondary:hover{
+    background: transparent;
+    color: #3d2514;
+    border: 1.7px solid #3d2514;
+}
+.stay .title-1 .btn-secondary:focus{
+    background: transparent;
+    color: #3d2514;
+    border: 1.7px solid #3d2514;
+}
+
+/* stay end */
+
+/* banner start */
+.banner{
+    width: 100%;
+    padding: 90px 0px 40px;
+}
+.banner .card-img-overlay h5{
+    font-family: 'Montserrat', sans-serif !important;
+    color:#fff;
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0px 9px;
+}
+.banner .card-img-overlay h2{
+    width: 55%;
+    font-family: 'Fredericka the Great', cursive !important;    
+    color:#fff;
+    font-size: 34px;
+    line-height: 1.03em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 13px 0px 0px;
+}
+.banner .card1{
+    margin: 0px 0px 33px 0px;
+}
+.banner .card2{
+    top: 0 !important;
+    margin: 0px 0px 33px 0px;
+}
+.banner .card3{
+    margin: 33px 0px 33px 0px;
+}
+.banner .card{
+    transition: .4s;
+}
+.banner .card:hover{
+    transform: scale(1.01) translateX(0px) translateY(-6px)!important ;
+    box-shadow: 7px 12px 18px rgba(0, 0, 0, 0.5);
+}
+/* banner end */
+
+/* testimonial section start */
+.testimonial{
+    position: relative;
+    width: 100%;
+    padding: 120px 0px 0px;
+    z-index: 1;
+}
+.testimonial .inner-t{
+    background: #fff;
+    padding: 36px;
+    box-shadow: 3px 10px 25px rgba(0, 0, 0, 0.2) ;
+}
+.testimonial .inner-t .owl-carousel .item .title-1{
+    text-align: start;
+    padding: 10px;
+}
+.testimonial .inner-t .owl-carousel .item .title-1 h2{
+    font-family: 'Fredericka the Great', cursive !important;
+    font-size: 36px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.2em;
+    letter-spacing:1px;
+    color: #3d2514;
+    margin: 0px 0px 20px;
+}
+.testimonial .inner-t .owl-carousel .item .title-1 h2 span{
+    font-family: 'Montserrat', sans-serif !important;    
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: none;
+    line-height: 1.2em;
+    letter-spacing:2px;
+    color: #3d2514;
+    margin: 30px 0px 25px;
+}
+.testimonial .inner-t .owl-carousel .item .title-1 p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.6em;
+    text-align: start;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #3d2514;
+    margin: 25px 0px 20px;
+}
+.testimonial .inner-t .owl-carousel .item .title-1 img{
+    width: 100%;
+}
+.testimonial .title-1{
+    margin: 10px 0px 50px 0px;
+}
+.testimonial .owl-carousel{
+    width: 100%;
+}
+.testimonial .owl-carousel .item{
+    width: 100%;
+}
+.testimonial .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -33px;
+    bottom: -3px;
+    position: absolute;
+    left: 1px;
+}
+.testimonial .owl-theme .owl-dots .owl-dot span {
+    background: transparent;
+    border: 2px solid #dcdcdc;
+    width: 12px;
+    height: 12px;
+}
+.testimonial .owl-theme .owl-dots .owl-dot.active span{
+    background: #ffe001;
+    border: 2px solid #ffe001;
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 3px;
+}
+/* testimonial section end */
+
+/* contact section start */
+.contact{
+    width: 100%;
+    padding: 0px 0px 220px;
+    margin-top: -100px;
+    background: url(../image/contactbg.png) center top no-repeat;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+}
+.contact .title-1 h2{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 26px;
+    font-weight: 500;
+    text-shadow: none;
+    line-height: 1.2em;
+    border: none;
+    letter-spacing:2px;
+    color: #3d2514;
+    padding: 80px 0px 0px;
+    margin: 0px 0px 15px;
+}
+.contact .title-1 h3{
+    font-family: 'Fredericka the Great', cursive !important;    
+    font-size: 44px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 1.2em;
+    letter-spacing:1px;
+    color: #3d2514;
+    margin: 0px 0px 50px;
+}
+/* contact form start */
+.contact-form{
+    width: 100%;
+    padding: -80px 0px 0px;
+    margin: 45px 0px 0px;
+    background: transparent;
+    position: relative;
+}
+.contact .contact-form .form-control{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    padding: 12px 15px;
+    text-transform: capitalize;
+    color: #3d2514;
+    border: 1px solid #3d2514;
+    background: transparent;
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 0px 0px 15px;
+}
+.contact-form .form-control::placeholder{
+    color: #999;
+
+    text-transform: capitalize;
+}
+
+.contact-form .form-control:focus {
+    opacity: .8;
+    background: transparent;
+    color: #3d2514 ;
+    border-color: #ffe001;
+    box-shadow: 0 0 0 0.10rem #ffe001;
+}
+.contact .contact-form .btn-primary{
+    font-family: 'Montserrat', sans-serif !important;
+    width: 100%;
+    background: #ffe001;
+    color: #3d2514;
+    border: 1px solid #ffe001;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    margin: 0px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition:all 1s;
+}
+.contact .contact-form .btn-primary:hover{
+    border: 1px solid #3d2514f5;
+    background: linear-gradient(#f3e97a52 ,#ffe100f5,#fdf59a52);    
+    color: #3d2514;
+    box-shadow:inset 2px 2px 2px  rgba(255, 255, 255, 0.9);
+    box-shadow:inset 0 0 0 0.10rem #ffe001;
+}
+/* contact form end */
+/* contact section end */
+
+/* footer section start */
+.footer{
+    width: 100%;
+    padding: 10px 0px 0px;
+    color: #fff;
+    margin: 0px !important;
+}
+.footer .inner-footer{
+    background: url(../image/footer.png)center top no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.footer .inner-footer .box-1{
+    width: 100%;
+    float: left;
+    padding: 70px 10px;
+    margin: 0px 0px 30px 0px;
+    border-bottom: 2px dotted #999;
+}
+.footer .inner-footer .box-1 .left-box{
+    padding: 10px 60px;
+}
+.footer .inner-footer .box-1 .left-box img{
+    width: 70%;
+    margin: 10px 0px 40px;
+}
+.footer .inner-footer .box-1 .left-box p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 400;
+}
+.footer .inner-footer .box-1 .right-box{
+    padding: 150px 20px 25px 60px;
+    text-transform: capitalize;
+}
+.footer .inner-footer .box-1 .right-box .logo{
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 20px;
+}
+.footer .inner-footer .box-1 .right-box p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 500;
+    margin: 0px 0px 10px 15px;
+}
+.footer .inner-footer .box-2{
+    margin: 25px 0px;
+    display: block;
+}
+.footer .inner-footer .box-2 .start{
+    display: block;
+    padding: 5px 71px 0px;    
+    margin-top: 5px;
+}
+.footer .inner-footer .box-2 .end{
+    display: block;
+    margin-top: 5px;
+    padding: 5px 10px 0px;    
+}
+.footer .inner-footer .fa{
+    font-size: 19px;
+    cursor: pointer;
+    margin: 0px 0px 20px 35px;
+    transition: .3s ease-out;
+}
+.footer .inner-footer .fa:hover{
+    color: #ffe001;
+    transform: scale(1.25);
+}
+.footer .inner-footer p{
+    opacity: .95;
+    color: #dcdcdc;
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 1px;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.footer .inner-footer .start span{
+    display: -webkit-inline-box;
+    opacity: .99;
+    color:#fff ;
+    font-size: 19.3px;
+    text-decoration: none;
+    font-weight: 400;
+    transition:all .3s ease-out;
+}
+.footer .inner-footer .start span:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    letter-spacing: 1.3px;
+    font-size: 19.4px;
+    color: #ffe001;
+}
+.footer .footer-logo img{
+    width: 50% !important;
+    margin-bottom: 15px !important;
+    background-color: #ffe001;
+    border-radius: 40px;
+    padding: 15px;
+}
+/* footer section end */
+
+
+/* extra */
+.bootstrap-timepicker-widget table td input {
+    width: 55px !important;
+    font-size: 18px;
+    font-family: 'Fredericka the Great','system-ui' !important;
+    margin: 5px 15px;
+    padding: 6px 3px;
+    text-align: center;
+    color: #2c1b0f !important;
+    background: #f5e250bd;
+}
+.bootstrap-timepicker-widget.dropdown-menu.open {
+    display: inline-block ;
+    width: 250px;
+    height: auto;
+    background: #3d251485;
+}
+.bootstrap-timepicker-widget table td a {
+    border: 1px solid #3d2514 !important;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 0;
+    outline: 0;
+    background: transparent;
+    color: #3d2514;
+}
+.bootstrap-timepicker-widget table td a {
+    border: 1px solid #3d2514 !important;
+    width: 25px !important;
+    display: inline-block;
+    margin: 15px 10px !important;
+    padding: 8px 0;
+    outline: 0;
+    color: #3d2514;
+    /* border-top-left-radius:25%; */
+    border-radius: 50%;
+    background: #3d2514;
+    transition: .5s;
+}
+.bootstrap-timepicker-widget table td a:hover{
+    color: #fff !important;
+}
+.bootstrap-timepicker-widget table td a:focus{
+    color: #3d2514 !important;
+}
+
+.datepicker {
+    padding: 14px 23px !important;
+    font-size: 16px !important;
+    background: #3d2514 !important;
+    color: #fff !important;
+    transition:all 0.05s linear!important;
+}
+.datepicker:hover{
+    cursor: pointer!important;
+    background-color: #ffe001 !important;
+    color: #000 !important;
+}
+.datepicker:focus{
+    color: #fff !important;
+    background-color:#3d2514 !important ;
+}
